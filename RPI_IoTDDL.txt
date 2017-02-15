@@ -1,0 +1,9 @@
+<Atlas_IoT-DDL>
+	<Atlas_Thing>
+		<Descriptive_Metadata>			< Owner> Mobile and Pervasive Computing Lab </Owner>			< Name> Raspberry-PI </ Name>			< Model> B </ Model>			< Short_Description> Sensor Platform </ Short_Description>			< Operating_System> Raspberry </ Operating_System >		</Descriptive_Metadata>
+	</Atlas_Thing>
+
+	<Thing_Entities>
+	    <Entity_1>		<Descriptive_Metadata>			< Name>Alarm Clock</ Name>			< Category>Software</ Category>			< Owner>Linux</ Owner>			< Type>Built-in</ Type>			< Description>Set alarm</ Description>		</Descriptive_Metadata>		< Services>			<Service_1>				< Description>Set On Timer Hour </ Description>				< InputTypes>Integer </ InputTypes>				< InputDescription>Timer Hour </ InputDescription>				< OutputTypes>Integer</ OutputTypes>			        < OutputDescription>Set when Trigger </ OutputDescription>				< FunctionMap>Set_Timer_Hour</ FunctionMap>			</Service_1>		< /Services>	    </ Entity_1>
+	</Thing_Entities>
+</Atlas_IoT-DDL>
