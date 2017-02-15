@@ -1,0 +1,51 @@
+<Atlas_IoT-DDL>
+	<Atlas_Thing>
+		<Descriptive_Metadata>
+			<Owner> Mobile and Pervasive Computing Lab </Owner>
+			<Name> Raspberry-PI </Name>
+			<Model> B </ Model>
+			<Short_Description> Sensor Platform </Short_Description>
+			<Operating_System> Raspberry </Operating_System >
+		</Descriptive_Metadata>
+		<Structural_Metadata>
+			<Software_Entities> 1 </Software_Entities>
+			<Attachments> 1 </Attachments>
+		</Structural_Metadata>
+		<Resources>
+			<Network_Properties>
+				<Module> Wifi </Module>
+				<Type> External USB </Type>
+				<Protocol> MQTT </Protocol>
+				<Broker_URL> broker.hivemq.com </Broker_URL>
+				<Broker_Port> 1883 </Broker_Port>
+				<Broker_Port_Type> TCP </Broker_Port_Type>
+			</Network_Properties>
+			<Memory_Properties>
+				<Received_Interactions> RAM </Received_Interactions>
+				<Received_Tweets> RAM </Received_Tweets>
+			</Memory_Properties>
+		</Resources>
+	</Atlas_Thing>
+
+	<Thing_Entities>
+	    <Entity_1>
+		<Descriptive_Metadata>
+			<Name>Alarm Clock</Name>
+			<Category>Software</Category>
+			<Owner>Linux</Owner>
+			<Type>Built-in</Type>
+			<Description>Set alarm</Description>
+		</Descriptive_Metadata>
+		<Services>
+			<Service_1>
+				<Description>Set On Timer Hour </Description>
+				<InputTypes>Integer </InputTypes>
+				<InputDescription>Timer Hour </InputDescription>
+				<OutputTypes>Integer</OutputTypes>
+			    <OutputDescription>Set when Trigger </OutputDescription>
+				< FunctionMap>Set_Timer_Hour</FunctionMap>
+			</Service_1>
+		</Services>
+	    </Entity_1>
+	</Thing_Entities>
+</Atlas_IoT-DDL>
