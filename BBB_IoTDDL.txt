@@ -1,14 +1,0 @@
-<Atlas_IoT-DDL>
-	<Atlas_Thing>
-		<Descriptive_Metadata>			< Owner> Mobile and Pervasive Computing Lab </Owner>			< Name> Beaglebone </ Name>			< Model> Black </ Model>			< Short_Description> Sensor Platform </ Short_Description>			< Operating_System> Linux Angstrom </ Operating_System >		</Descriptive_Metadata>
-	</Atlas_Thing>
-
-	<Thing_Entities>
-	<Entity_1>		<Descriptive_Metadata>			< Name>Coffee Maker</ Name>			< Category>Hardware</ Category>			< Owner>Bosch</ Owner>			< Type>Attached</ Type>			< Description>Prepare Coffee</ Description>		</Descriptive_Metadata>		< Services>			<Service_1>				< Description>Turn On For Duration </ Description>				< InputTypes>Integer </ InputTypes>				< InputDescription>Duration in Minutes </ InputDescription>				< OutputTypes>NULL</ OutputTypes>				< FunctionMap>HighVolt_GPIO_Duration</ FunctionMap>			</Service_1>			<Service_2>				< Description>Turn Off </ Description>				< InputTypes>NULL </ InputTypes>				< OutputTypes>NULL</ OutputTypes>				< FunctionMap>LowVolt_GPIO</ FunctionMap>			</Service_2>		< /Services>	</ Entity_1>
-	</Thing_Entities>
-
-	<Thing_Attachments>
-		<Attachment_1>			< Type>Log_Server </ Type>			<Description> HTTP1.1 Server </ Description>			<URI>192.168.0.4</ URI>			<Port>8080</ Port>			<REST_Method>PUT</ REST_Method >			<Access_Type>Public</ Access_Type>			<API_Key>NULL</ API_Key>			<Message_Format>Plain</ Message_Format>			<Update_Duration_Value>2</ Update_Duration_value>			< Update_Duration_Unit>minute</ Update_Duration_Unit>			<Backend_Technology>NodeJS</ Backend_Technology>		</ Attachment_1>	
-</Thing_Attachments>
-
-</Atlas_IoT-DDL>
